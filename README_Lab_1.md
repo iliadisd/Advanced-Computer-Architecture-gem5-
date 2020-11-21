@@ -121,10 +121,10 @@ sim_ticks                                    43585000
 ### 3b) Όπως αναφέρθηκε και παραπάνω, το μοντέλο TimingSimpleCPU χρησιμοποιεί timing memory accesses που είναι πιο αργό πιο detailed access και απαιτούνται πολλαπλοί κύκλοι απ'ότι το MinorCPU.
 
 ### 3c) Δοκιμές
-<pre>
+
 
 i) *MinorCPU* @ 3.7GHz
-
+<pre>
 final_tick                                   32743000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 263634                       # Simulator instruction rate (inst/s)
 host_mem_usage                                 666176                       # Number of bytes of host memory used
