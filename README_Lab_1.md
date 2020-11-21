@@ -62,6 +62,8 @@ data structures και συμπεριφορά εκτέλεσης. Το πιο σ
 Συνήθως τα stages χρησιμοποιούνται σε πεντάδες με τις εξής λειτουργίες:
 εισαγωγή εντολής -> αποκωδικοποίηση εντολής -> εκτέλεση εντολής -> επεξεργασία μνήμης -> εγγραφή καταχωρητών
 
+</pre>
+
 ### 3a) C code
 <pre>
 
@@ -88,8 +90,8 @@ int main () {
 
 </pre>
 
-i) *MinorCPU*
-
+### i) *MinorCPU*
+<pre>
 final_tick                                   36814000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 266201                       # Simulator instruction rate (inst/s)
 host_mem_usage                                 666432                       # Number of bytes of host memory used
@@ -101,9 +103,9 @@ sim_insts                                       11347                       # Nu
 sim_ops                                         12994                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000037                       # Number of seconds simulated
 sim_ticks                                    36814000  
-
-ii) *TimingSimpleCPU*
-
+</pre>
+### ii) *TimingSimpleCPU*
+<pre>
 final_tick                                   43585000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 718875                       # Simulator instruction rate (inst/s)
 host_mem_usage                                 664128                       # Number of bytes of host memory used
@@ -115,7 +117,7 @@ sim_insts                                       11281                       # Nu
 sim_ops                                         12877                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000044                       # Number of seconds simulated
 sim_ticks                                    43585000
-
+</pre>
 ### 3b) Όπως αναφέρθηκε και παραπάνω, το μοντέλο TimingSimpleCPU χρησιμοποιεί timing memory accesses που είναι πιο αργό πιο detailed access και απαιτούνται πολλαπλοί κύκλοι απ'ότι το MinorCPU.
 
 ### 3c) Δοκιμές
@@ -134,8 +136,9 @@ sim_insts                                       11347                       # Nu
 sim_ops                                         12994                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000033                       # Number of seconds simulated
 sim_ticks                                    32743000                       # Number of ticks simulated
-
+</pre>
 ii) *TimingSimpleCPU* @ 3.7GHz
+<pre>
 
 final_tick                                   39575500                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 706742                       # Simulator instruction rate (inst/s)
@@ -148,10 +151,11 @@ sim_insts                                       11281                       # Nu
 sim_ops                                         12877                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000040                       # Number of seconds simulated
 sim_ticks                                    39575500                       # Number of ticks simulated
-
+</pre>
 Βλέπουμε και στις 2 περιπτώσεις ότι αυξάνοντας τη συχνότητα μειώνεται ο χρόνος, πράγμα αναμενόμενο.
 
 iii) *MinorCPU* with DDR3_2133_8x8
+<pre>
 
 final_tick                                   35420000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 269319                       # Simulator instruction rate (inst/s)
@@ -164,8 +168,10 @@ sim_insts                                       11347                       # Nu
 sim_ops                                         12994                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000035                       # Number of seconds simulated
 sim_ticks                                    35420000  
+</pre>
 
 iv) *TimingSimpleCPU* with DDR3_2133_8x8
+<pre>
 
 final_tick                                   42606000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 690842                       # Simulator instruction rate (inst/s)
@@ -178,10 +184,12 @@ sim_insts                                       11281                       # Nu
 sim_ops                                         12877                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000043                       # Number of seconds simulated
 sim_ticks                                    42606000   
+</pre>
 
 Παρατηρούμε ότι και με πιο γρήγορα συχνότητα στη μνήμη βελτιώνεται η ταχύτητα.
 
 v) *MinorCPU* @ 3.7GHz & DDR3_2133_8x8
+<pre>
 
 final_tick                                   31525000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 266937                       # Simulator instruction rate (inst/s)
@@ -194,8 +202,11 @@ sim_insts                                       11347                       # Nu
 sim_ops                                         12994                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000032                       # Number of seconds simulated
 sim_ticks                                    31525000      
+</pre>
 
 vi) *TimingSimpleCPU* @ 3.7GHz & DDR3_2133_8x8
+<pre>
+
 final_tick                                   38330500                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 718534                       # Simulator instruction rate (inst/s)
 host_mem_usage                                 664132                       # Number of bytes of host memory used
