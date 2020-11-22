@@ -84,8 +84,7 @@ data structures και συμπεριφορά εκτέλεσης. Το πιο σ
 ### 3a) C code
 <pre>
 
-
-#include <stdio.h> 
+<code> #include <stdio.h> </code>
 
 int main () {
   int i, sum = 0;
