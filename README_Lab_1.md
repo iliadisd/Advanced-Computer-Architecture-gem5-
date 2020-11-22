@@ -82,7 +82,9 @@ data structures και συμπεριφορά εκτέλεσης. Το πιο σ
 </pre>
 
 ### 3a) C code
-<pre><code>
+<pre>
+
+``` c
 
 #include <stdio.h>
 
@@ -105,7 +107,9 @@ int main () {
   return 0;
 }
 
-</pre></code>
+```
+
+</pre>
 
 #### i) *MinorCPU*
 <pre>
@@ -254,5 +258,5 @@ http://learning.gem5.org/book/part1/building.html
 http://learning.gem5.org/book/part1/example_configs.html
 https://nitish2112.github.io/post/gem5-minor-cpu/
 
-//#### Κριτική/Παρατηρήσεις
-//Σε αυτό το εργαστήριο χρειάστηκε να έρθω σε επαφή με αρκετές έννοιες
+#### Κριτική/Παρατηρήσεις
+
