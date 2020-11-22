@@ -82,7 +82,7 @@ data structures και συμπεριφορά εκτέλεσης. Το πιο σ
 </pre>
 
 ### 3a) C code
-<pre>
+<code>
 
 #include <stdio.h>
 
@@ -105,7 +105,7 @@ int main () {
   return 0;
 }
 
-</pre>
+</code>
 
 #### i) *MinorCPU*
 <pre>
