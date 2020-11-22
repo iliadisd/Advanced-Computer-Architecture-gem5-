@@ -90,7 +90,7 @@ int main () {
 
 </pre>
 
-### i) *MinorCPU*
+#### i) *MinorCPU*
 <pre>
 final_tick                                   36814000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 266201                       # Simulator instruction rate (inst/s)
@@ -104,7 +104,7 @@ sim_ops                                         12994                       # Nu
 sim_seconds                                  0.000037                       # Number of seconds simulated
 sim_ticks                                    36814000  
 </pre>
-### ii) *TimingSimpleCPU*
+#### ii) *TimingSimpleCPU*
 <pre>
 final_tick                                   43585000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 718875                       # Simulator instruction rate (inst/s)
@@ -123,7 +123,7 @@ sim_ticks                                    43585000
 ### 3c) Δοκιμές
 
 
-i) *MinorCPU* @ 3.7GHz
+#### i) *MinorCPU* @ 3.7GHz
 <pre>
 final_tick                                   32743000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 host_inst_rate                                 263634                       # Simulator instruction rate (inst/s)
@@ -137,7 +137,7 @@ sim_ops                                         12994                       # Nu
 sim_seconds                                  0.000033                       # Number of seconds simulated
 sim_ticks                                    32743000                       # Number of ticks simulated
 </pre>
-ii) *TimingSimpleCPU* @ 3.7GHz
+#### ii) *TimingSimpleCPU* @ 3.7GHz
 <pre>
 
 final_tick                                   39575500                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
@@ -154,7 +154,7 @@ sim_ticks                                    39575500                       # Nu
 </pre>
 Βλέπουμε και στις 2 περιπτώσεις ότι αυξάνοντας τη συχνότητα μειώνεται ο χρόνος, πράγμα αναμενόμενο.
 
-iii) *MinorCPU* with DDR3_2133_8x8
+#### iii) *MinorCPU* with DDR3_2133_8x8
 <pre>
 
 final_tick                                   35420000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
@@ -170,7 +170,7 @@ sim_seconds                                  0.000035                       # Nu
 sim_ticks                                    35420000  
 </pre>
 
-iv) *TimingSimpleCPU* with DDR3_2133_8x8
+#### iv) *TimingSimpleCPU* with DDR3_2133_8x8
 <pre>
 
 final_tick                                   42606000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
@@ -186,9 +186,9 @@ sim_seconds                                  0.000043                       # Nu
 sim_ticks                                    42606000   
 </pre>
 
-Παρατηρούμε ότι και με πιο γρήγορα συχνότητα στη μνήμη βελτιώνεται η ταχύτητα.
+Παρατηρούμε ότι και με πιο μεγάλη συχνότητα στη μνήμη βελτιώνεται η ταχύτητα.
 
-v) *MinorCPU* @ 3.7GHz & DDR3_2133_8x8
+#### v) *MinorCPU* @ 3.7GHz & DDR3_2133_8x8
 <pre>
 
 final_tick                                   31525000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
@@ -204,7 +204,7 @@ sim_seconds                                  0.000032                       # Nu
 sim_ticks                                    31525000      
 </pre>
 
-vi) *TimingSimpleCPU* @ 3.7GHz & DDR3_2133_8x8
+#### vi) *TimingSimpleCPU* @ 3.7GHz & DDR3_2133_8x8
 <pre>
 
 final_tick                                   38330500                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
@@ -231,5 +231,5 @@ http://learning.gem5.org/book/part1/building.html
 http://learning.gem5.org/book/part1/example_configs.html
 https://nitish2112.github.io/post/gem5-minor-cpu/
 
-#### Κριτική/Παρατηρήσεις
-Σε αυτό το εργαστήριο χρειάστηκε να έρθω σε επαφή με αρκετές έννοιες
+//#### Κριτική/Παρατηρήσεις
+//Σε αυτό το εργαστήριο χρειάστηκε να έρθω σε επαφή με αρκετές έννοιες
