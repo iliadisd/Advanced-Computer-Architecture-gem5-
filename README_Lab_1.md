@@ -84,9 +84,8 @@ data structures και συμπεριφορά εκτέλεσης. Το πιο σ
 ### 3a) C code
 <pre>
 
-``` c
 
-#include <stdio.h>
+#include <stdio.h> 
 
 int main () {
   int i, sum = 0;
@@ -106,8 +105,6 @@ int main () {
   printf("sum = %d \n \n", sum) ;
   return 0;
 }
-
-```
 
 </pre>
 
