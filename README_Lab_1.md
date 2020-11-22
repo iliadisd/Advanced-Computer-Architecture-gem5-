@@ -3,7 +3,10 @@
 
 ## Ερωτήματα
 
+
 ### 1) Στη main() της starter_se.py:
+<pre>
+
 * Default CPU type = atomic
 * Default CPU frequency = 4 Ghz
 * Default CPU Cores to utilize = 1 core
@@ -13,7 +16,11 @@
 * Default Memory Size = 2 GB
 * Cache line size = 64 bytes
 
+</pre>
+
 ### 2a) Τα config.ini και config.json είναι τα ίδια αρχεία απλά σε άλλο format. Τα αποτελέσματα είναι τα ίδια εκτός από το type, πράγμα λογικό αφού στην εκτέλεση χρησιμοποιήσαμε το --cpu="minor" flag.
+<pre>
+
 * type=MinorCPU
 * numThreads=1        
 * ranks_per_channel=2
@@ -21,12 +28,22 @@
 * voltage=3.3
 * p_state_clk_gate_max=1000000000000
 
+</pre>
+
 ### 2b) Committed instructions. Στο stats.txt για το hello world έχουμε 54 calls σε commited instruction classes. Η διαφορά οφείλεται σε διάφορα microperations που κάνει το gem5.
+<pre>
+
 * system.cpu_cluster.cpus.committedInsts           5028
 * system.cpu_cluster.cpus.committedOps             5834
 
+</pre>
+
 ### 2c) Αν δεν είχαμε τα στατιστικά θα προσπαθούσα να βρω misses/missrate = memory accesses. Τα L2 cache accesses :
+<pre>
+
 * system.cpu_cluster.l2.overall_accesses::total    479
+
+</pre>
 
 ### 3) Cpu models of gem5.
 <pre>
@@ -117,7 +134,9 @@ sim_insts                                       11281                       # Nu
 sim_ops                                         12877                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000044                       # Number of seconds simulated
 sim_ticks                                    43585000
+
 </pre>
+
 ### 3b) Όπως αναφέρθηκε και παραπάνω, το μοντέλο TimingSimpleCPU χρησιμοποιεί timing memory accesses που είναι πιο αργό πιο detailed access και απαιτούνται πολλαπλοί κύκλοι απ'ότι το MinorCPU.
 
 ### 3c) Δοκιμές
@@ -168,6 +187,7 @@ sim_insts                                       11347                       # Nu
 sim_ops                                         12994                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000035                       # Number of seconds simulated
 sim_ticks                                    35420000  
+
 </pre>
 
 #### iv) *TimingSimpleCPU* with DDR3_2133_8x8
@@ -184,6 +204,7 @@ sim_insts                                       11281                       # Nu
 sim_ops                                         12877                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000043                       # Number of seconds simulated
 sim_ticks                                    42606000   
+
 </pre>
 
 Παρατηρούμε ότι και με πιο μεγάλη συχνότητα στη μνήμη βελτιώνεται η ταχύτητα.
@@ -202,6 +223,7 @@ sim_insts                                       11347                       # Nu
 sim_ops                                         12994                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000032                       # Number of seconds simulated
 sim_ticks                                    31525000      
+
 </pre>
 
 #### vi) *TimingSimpleCPU* @ 3.7GHz & DDR3_2133_8x8
@@ -218,6 +240,7 @@ sim_insts                                       11281                       # Nu
 sim_ops                                         12877                       # Number of ops (including micro ops) simulated
 sim_seconds                                  0.000038                       # Number of seconds simulated
 sim_ticks                                    38330500     
+
 </pre>
 
 *Resources:*
