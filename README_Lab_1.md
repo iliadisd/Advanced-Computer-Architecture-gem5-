@@ -88,7 +88,7 @@ stage αλλιώς κρατάει την πληροφορία περιμένον
 ### 3a) C code
 <pre>
 
-    #include <stdio.h>
+    #include "stdio.h"
 
     int main () {
       int i, sum = 0;
