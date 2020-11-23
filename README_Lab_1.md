@@ -63,7 +63,7 @@
 Το AtomicSimpleCPU χρησιμοποιεί atomic memory accesses. Όταν αυτές γίνονται, οι απαντήσεις γυρνάνε μέσα από τα function
 returns. Χρησιμοποιούνται για fast forwarding και για να κάνοτν warm up τις caches και γυρνάνε μια χρονική εκτίμηση για
 την ολοκλήρωση του request χωρίς delays. Το AtomicSimpleCPU χρησιμοποιεί αυτούς τους χρόνους για να μπορέσει να εκτιμήσει
-ένα overall συνολικό cache access time. Τέλος, το AtomicSimpleCPU υλοποιεί συναρτήσει για το R/W memory, για τα ticks και
+ένα overall συνολικό cache access time. Τέλος, το AtomicSimpleCPU υλοποιεί συναρτήσεις για το R/W memory, για τα ticks και
 συνδέει τη CPU με την cache.
 
 Το TimingSimpleCPU χρησιμοποιεί timing memory accesses. Αυτές είναι οι πιο λεπτομερείς προσπελάσεις και μοντελοποιούν μία
