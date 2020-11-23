@@ -38,7 +38,7 @@
 
 </pre>
 
-### 2c) Αν δεν είχαμε τα στατιστικά θα προσπαθούσα να βρω misses/missrate = memory accesses για το L1. Τα L2 cache accesses :
+### 2c) Αν δεν είχαμε τα στατιστικά θα προσπαθούσα να βρω από το L1 τα misses/missrate = memory accesses. Τα L2 cache accesses :
 <pre>
 
 * system.cpu_cluster.l2.overall_accesses::total    479
