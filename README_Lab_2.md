@@ -142,17 +142,17 @@ L2.cache.assoc(8) και το cache_line_size (128).
 
 *Cost(l1_cache_size) = 5 * Cost(l2_cache_size)
 
-## L1 Cache associativity -  L2 Cache associativity
+#### L1 Cache associativity -  L2 Cache associativity
 Επειδή η L1 cache βρίσκεται πιο κοντά στον επεξεργαστή από ότι η L2, η πρόσβαση στην L1 είναι πιο κοστοβόρα από την
 πρόσβαση στην L2. Επίσης, επειδή η L1 θα είναι μικρότερη σε μέγεθος, πρέπει να την φορτώνω μόνο για τα πολύ
 σημαντικά tasks. Συνεπώς
 *Cost(l1_cache_assoc) = 4 * Cost(l2_cache_assoc)
 
-## Cache line size
+#### Cache line size
 Συνήθως είναι 64KB. Μπορεί η L1 να είναι πιο γρήγορη αλλά η L2 είναι πιο μεγάλη σε χωρητικότητα. Συνεπώς είναι πιο
 κοστοβόρο να μεταφέρω μπλοκ στην L1 γιατί είναι περιορισμένη. Θεωρώ κόστος 4 φορές στην L1.
 
-## Συνεπώς συνάρτηση που προκύπτει είναι :
+#### Συνεπώς συνάρτηση που προκύπτει είναι :
 <pre>
 Cost = 5 * l1_dcache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + 5 * l1_icache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + l2_cache_size * ( l2_cache_assoc+ cache_line_size)
 </pre>
