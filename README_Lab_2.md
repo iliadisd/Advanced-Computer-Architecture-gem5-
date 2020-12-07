@@ -164,7 +164,7 @@ Cost = 5 * l1_dcache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + 5 * l1
 * L1.icache.assoc = 2
 * L1_dcache_size = 128
 * L1.dcache.assoc = 2
-* L2_cache_size = 1024
+* L2_cache_size = 2048
 * L2.cache.assoc = 16
 * cache_line_size = 64
 </pre>
