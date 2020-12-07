@@ -81,7 +81,7 @@ L1.dcache.assoc (8)και η αύξηση του L1_dcache_size (128kB).
 
 ##hmmer
 Και εδώ το CPI είναι κοντά στο 1. Από το stats.txt βλέπουμε ότι μπορούμε να βελτιώσουμε τα missrates, αυξάνοντας
-το cache_line_size (128), το L1_dcache_size (-->128kB) και το L1.dcache.assoc (8).
+το cache_line_size (128), το L1_dcache_size (128kB) και το L1.dcache.assoc (8).
 
 <pre>
 *hmmer system.cpu.cpi = 1.404100
