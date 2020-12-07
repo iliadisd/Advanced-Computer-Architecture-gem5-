@@ -156,3 +156,16 @@ L2.cache.assoc(8) και το cache_line_size (128).
 <pre>
 Cost = 5 * l1_dcache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + 5 * l1_icache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + l2_cache_size * ( l2_cache_assoc+ cache_line_size)
 </pre>
+
+#### και μια πιθανή αρχιτεκτονική :
+
+<pre>
+* L1_icache_size = 64
+* L1.icache.assoc = 2
+* L1_dcache_size = 128
+* L1.dcache.assoc = 2
+* L2_cache_size = 1024
+* L2.cache.assoc = 8
+* cache_line_size = 64
+</pre>
+
