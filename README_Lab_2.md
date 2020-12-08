@@ -112,15 +112,25 @@ L2.cache.assoc(8) και το cache_line_size (128).
 
 ### 2.2 Μετά από διάφορες δοκιμές και με βάση τα προηγούμενα ερωτήματα κατέληξα στις παραπάνω επιλογές. Παρακάτω φαίνεται το διάγραμμα στο οποίο συγκρίνω το κάθε simulation του κάθε benchmark μεταξύ του με βάση τους CPI.
 
-![image]()
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/bzip.png?raw=true)
 
-![image]()
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/bzipa.png?raw=true)
 
-![image]()
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/hmmer.png?raw=true)
 
-![image]()
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/hmmera.png?raw=true)
 
-![image]()
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/libm.png?raw=true)
+
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/libma.png?raw=true)
+
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/mcf.png?raw=true)
+
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/mcfa.png?raw=true)
+
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/sjeng.png?raw=true)
+
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/sjenga.png?raw=true)
 
 ### 3. Κόστος απόδοσης και βελτιστοποίηση κόστους/απόδοσης
 Σύμφωνα με τα προηγούμενα βήματα, οι παράμετροι που επηρεάζουν το κόστος απόδοσης περισσότερο είναι παρακάτω:
