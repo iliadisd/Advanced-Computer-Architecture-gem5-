@@ -1497,7 +1497,7 @@
             },
             "response_latency": 20,
             "sequential_access": false,
-            "size": 524288,
+            "size": 2097152,
             "system": "system",
             "tag_latency": 20,
             "tags": {
@@ -1518,7 +1518,7 @@
                     "assoc": 8,
                     "entry_size": 128,
                     "eventq_index": 0,
-                    "size": 524288
+                    "size": 2097152
                 },
                 "power_model": [],
                 "power_state": {
@@ -1536,7 +1536,7 @@
                 },
                 "replacement_policy": "system.l2.replacement_policy",
                 "sequential_access": false,
-                "size": 524288,
+                "size": 2097152,
                 "system": "system",
                 "tag_latency": 20,
                 "warmup_percentage": 0

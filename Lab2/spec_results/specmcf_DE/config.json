@@ -1210,7 +1210,7 @@
                     "addr_ranges": [
                         "0:18446744073709551615"
                     ],
-                    "assoc": 8,
+                    "assoc": 2,
                     "clk_domain": "system.cpu_clk_domain",
                     "clusivity": "mostly_incl",
                     "compressor": null,
@@ -1253,7 +1253,7 @@
                         "cxx_class": "BaseSetAssoc",
                         "name": "tags",
                         "path": "system.cpu.dcache.tags",
-                        "assoc": 8,
+                        "assoc": 2,
                         "block_size": 128,
                         "clk_domain": "system.cpu_clk_domain",
                         "entry_size": 128,
@@ -1263,7 +1263,7 @@
                             "cxx_class": "SetAssociative",
                             "name": "indexing_policy",
                             "path": "system.cpu.dcache.tags.indexing_policy",
-                            "assoc": 8,
+                            "assoc": 2,
                             "entry_size": 128,
                             "eventq_index": 0,
                             "size": 65536
@@ -1348,7 +1348,7 @@
                     },
                     "response_latency": 2,
                     "sequential_access": false,
-                    "size": 131072,
+                    "size": 32768,
                     "system": "system",
                     "tag_latency": 2,
                     "tags": {
@@ -1369,7 +1369,7 @@
                             "assoc": 8,
                             "entry_size": 128,
                             "eventq_index": 0,
-                            "size": 131072
+                            "size": 32768
                         },
                         "power_model": [],
                         "power_state": {
@@ -1387,7 +1387,7 @@
                         },
                         "replacement_policy": "system.cpu.icache.replacement_policy",
                         "sequential_access": false,
-                        "size": 131072,
+                        "size": 32768,
                         "system": "system",
                         "tag_latency": 2,
                         "warmup_percentage": 0

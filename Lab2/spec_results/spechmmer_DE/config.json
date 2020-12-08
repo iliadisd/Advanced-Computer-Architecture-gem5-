@@ -1220,7 +1220,7 @@
                     "addr_ranges": [
                         "0:18446744073709551615"
                     ],
-                    "assoc": 8,
+                    "assoc": 2,
                     "clk_domain": "system.cpu_clk_domain",
                     "clusivity": "mostly_incl",
                     "compressor": null,
@@ -1263,7 +1263,7 @@
                         "cxx_class": "BaseSetAssoc",
                         "name": "tags",
                         "path": "system.cpu.dcache.tags",
-                        "assoc": 8,
+                        "assoc": 2,
                         "block_size": 128,
                         "clk_domain": "system.cpu_clk_domain",
                         "entry_size": 128,
@@ -1273,7 +1273,7 @@
                             "cxx_class": "SetAssociative",
                             "name": "indexing_policy",
                             "path": "system.cpu.dcache.tags.indexing_policy",
-                            "assoc": 8,
+                            "assoc": 2,
                             "entry_size": 128,
                             "eventq_index": 0,
                             "size": 131072
