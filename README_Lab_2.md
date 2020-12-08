@@ -110,7 +110,7 @@ L2.cache.assoc(8) και το cache_line_size (128).
 *sjeng system.cpu.cpi = 10.276466
 </pre>
 
-### 2.2 Μετά από διάφορες δοκιμές και με βάση τα προηγούμενα ερωτήματα κατέληξα στις παραπάνω επιλογές. Παρακάτω φαίνεται το διάγραμμα στο οποίο συγκρίνω το κάθε simulation του κάθε benchmark μεταξύ του με βάση τους CPI.
+### 2.2 Μετά από διάφορες δοκιμές και με βάση τα προηγούμενα ερωτήματα κατέληξα στις παραπάνω επιλογές. Παρακάτω φαίνεται το διάγραμμα στο οποίο συγκρίνω το κάθε simulation του κάθε benchmark μεταξύ του με βάση τους CPI. Τα _DE (σκέτο) έχουν όλες τις επιλογές που έκανα παραπάνω. 
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/bzip.png?raw=true)
 
@@ -147,16 +147,17 @@ L2.cache.assoc(8) και το cache_line_size (128).
 
 ##L1 Cache size - L2 Cache size
 Η L1 cache είναι περίπου 100 φορές γρηγορότερη από μια τυπική ram, ενώ η L2 25 φορές. Συνεπώς η L1 είναι 4 φορές
-γρηγορότερη από την L2. Επίσης η L1 χωρίζεται σε instruction και data(icache, dcache). Τέλος η L1 είναι πολύ
+γρηγορότερη από την L2. Επίσης η L1 χωρίζεται σε instruction και data(icache, dcache) και θα βάλω διπλάσια dcache από icache. Τέλος η L1 είναι πολύ
 ακριβότερη από την L2. Σύμφωνα και με την εκφώνηση,
 
-*Cost(l1_cache_size) = 5 * Cost(l2_cache_size)
+*Cost(l1i_cache_size) = 10 * Cost(l2_cache_size)
+*Cost(l1d_cache_size) = 5 * Cost(l2_cache_size)
 
 #### L1 Cache associativity -  L2 Cache associativity
 Επειδή η L1 cache βρίσκεται πιο κοντά στον επεξεργαστή από ότι η L2, η πρόσβαση στην L1 είναι πιο κοστοβόρα από την
 πρόσβαση στην L2. Επίσης, επειδή η L1 θα είναι μικρότερη σε μέγεθος, πρέπει να την φορτώνω μόνο για τα πολύ
 σημαντικά tasks. Συνεπώς
-*Cost(l1_cache_assoc) = 4 * Cost(l2_cache_assoc)
+*Cost(l1_i/dcache_assoc) = 4 * Cost(l2_cache_assoc)
 
 #### Cache line size
 Συνήθως είναι 64KB. Μπορεί η L1 να είναι πιο γρήγορη αλλά η L2 είναι πιο μεγάλη σε χωρητικότητα. Συνεπώς είναι πιο
@@ -164,7 +165,7 @@ L2.cache.assoc(8) και το cache_line_size (128).
 
 #### Συνεπώς συνάρτηση που προκύπτει είναι :
 <pre>
-Cost = 5 * l1_dcache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + 5 * l1_icache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + l2_cache_size * ( l2_cache_assoc+ cache_line_size)
+Cost = 10 * l1_dcache_size * ( 4 * l1_cache_assoc + cache_line_size) + 5 * l1_icache_size * ( 4 * l1_cache_assoc + cache_line_size) + l2_cache_size * ( l2_cache_assoc + 4 * cache_line_size)
 </pre>
 
 #### και μια πιθανή αρχιτεκτονική :
@@ -174,8 +175,8 @@ Cost = 5 * l1_dcache_size * ( 4 * l1_cache_assoc + 4 * cache_line_size) + 5 * l1
 * L1.icache.assoc = 2
 * L1_dcache_size = 128
 * L1.dcache.assoc = 2
-* L2_cache_size = 2048
-* L2.cache.assoc = 16
+* L2_cache_size = 1024 ( ~640+ )
+* L2.cache.assoc = 8
 * cache_line_size = 64
 </pre>
 
