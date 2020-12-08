@@ -180,3 +180,5 @@ Cost = 10 * l1_dcache_size * ( 4 * l1_cache_assoc + cache_line_size) + 5 * l1_ic
 * cache_line_size = 64
 </pre>
 
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/3.png?raw=true)
+![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/3b.png?raw=true)
