@@ -81,14 +81,14 @@ L1.dcache.assoc (8)και η αύξηση του L1_dcache_size (128kB).
 
 ##hmmer
 Και εδώ το CPI είναι κοντά στο 1. Από το stats.txt βλέπουμε ότι μπορούμε να βελτιώσουμε τα missrates, αυξάνοντας
-το cache_line_size (128), το L1_dcache_size (128kB) και το L1.dcache.assoc (8).
+το cache_line_size (128), το L1_dcache_size (128kB).
 
 <pre>
 *hmmer system.cpu.cpi = 1.404100
 </pre>
 
 ##libm
-Εδώ το L2 missrate είναι πολύ μεγάλο, θα αυξήσω τα L2_cache_size(512),
+Εδώ το L2 missrate είναι πολύ μεγάλο, θα αυξήσω τα L2_cache_size(2048),
 L2.cache.assoc(8) και το cache_line_size (128).
 
 <pre>
@@ -104,7 +104,7 @@ L2.cache.assoc(8) και το cache_line_size (128).
 </pre>
 
 ##sjeng
-Ομοίως με παραπάνω, θα αυξήσω τα L2_cache_size(512), L2.cache.assoc(8) και το cache_line_size (128).
+Ομοίως με παραπάνω, θα αυξήσω τα L2_cache_size(2048), L2.cache.assoc(8) και το cache_line_size (128).
 
 <pre>
 *sjeng system.cpu.cpi = 10.276466
