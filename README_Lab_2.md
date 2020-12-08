@@ -112,15 +112,15 @@ L2.cache.assoc(8) και το cache_line_size (128).
 
 ### 2.2 Μετά από διάφορες δοκιμές και με βάση τα προηγούμενα ερωτήματα κατέληξα στις παραπάνω επιλογές. Παρακάτω φαίνεται το διάγραμμα στο οποίο συγκρίνω το κάθε simulation του κάθε benchmark μεταξύ του με βάση τους CPI.
 
-![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/bzip.png?raw=true)
+![image]()
 
-![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/hmmer.png?raw=true)
+![image]()
 
-![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/libm.png)
+![image]()
 
-![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/mcf.png?raw=true)
+![image]()
 
-![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/sjeng.png?raw=true)
+![image]()
 
 ### 3. Κόστος απόδοσης και βελτιστοποίηση κόστους/απόδοσης
 Σύμφωνα με τα προηγούμενα βήματα, οι παράμετροι που επηρεάζουν το κόστος απόδοσης περισσότερο είναι παρακάτω:
