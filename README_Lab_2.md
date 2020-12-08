@@ -182,3 +182,14 @@ Cost = 10 * l1_dcache_size * ( 4 * l1_cache_assoc + cache_line_size) + 5 * l1_ic
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/3.png?raw=true)
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab2/photos/3b.png?raw=true)
+
+*Resources:*
+https://www.gem5.org/documentation/general_docs/cpu_models/minor_cpu
+https://en.wikipedia.org/wiki/CPU_cache
+https://en.wikipedia.org/wiki/Cache_placement_policies#Set-associative_cache
+https://cseweb.ucsd.edu/classes/sp13/cse141-a/Slides/10_Caches_detail.pdf
+
+#### Κριτική/Παρατηρήσεις
+Ίσως το πιο ενδιαφέρον κομμάτι αυτού του εργαστηρίου να ήταν τα CPU_placement_policies όπως το Associativity που θέταμε στο
+δικό μας παράδειγμα. Προσωπικά μου κίνησε το ενδιαφέρον να ψάξω λίγα παραπάνω πράγματα για το συγκεκριμένο ζήτημα και μου 
+φάνηκε αρκετά ενδιαφέρον.
