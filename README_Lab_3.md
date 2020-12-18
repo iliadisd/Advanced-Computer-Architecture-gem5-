@@ -165,30 +165,36 @@ Processor:
 </pre>
 
 Για να βρω το Energy_Efficiency του κάθε επεξεργαστή, θα πρέπει να διαιρέσω το performance του κάθε επεξεργαστή
-με την ισχύ που κατανάλωσε ο καθένας. υποθέτωντας, λοιπόν αμελητέα την ισχύ της πηγής στον πρώτο τύπο :
-
+με την ισχύ που κατανάλωσε ο καθένας. υποθέτωντας, λοιπόν αμελητέα την ισχύ της πηγής στον πρώτο τύπο.
 Αν x = instruction_rate_ARM είναι:
-
+<pre>
 Energy_Efficiency_ARM = x/P_dyn_ARM + x/P_leak_ARM = x/runtime_dynamic_ARM + x/total_leakage_ARM =
 x / 2.96053W + x / 0.108687W = x * 9.54
+</pre>
 
 και
 
+<pre>
 Energy_Efficiency_Xeon = 40x/P_dyn_Xeon + 40x/P_leak_Xeon = 40x/runtime_dynamic_Xeon + 40x/total_leakage_Xeon =
 = 40 * x / 72.9199W + 40 * x / 36.8319W = x * 1.635
+</pre>
 
 Συνεπώς :
 
+<pre>
 Energy_Efficiency_ARM = 5.835 * Energy_Efficiency_Xeon , ενδεικτικά.
+</pre>
 
-
-###2.1 Energy Delay (EDP)
+### 2.1 Energy Delay (EDP)
+<pre>
 *Delay = total_simulation_seconds του αρχείου stats.txt από τον gem5.
 *Area -> McPAT
+</pre>
 
 Χρησιμοποιώντας το benchmark speclibm και τα αποτελέσματα του που πήρα στο προηγούμενο εργαστήριο και
 χρησιμοποιώντας το print_energy.py παίρνω την τιμή του energy για κάθε τρέξιμο.
 
+<pre>
 *cache32 : energy is 267.730505 mJ
 
 *cache128 : energy is 213.438275 mJ
@@ -222,10 +228,12 @@ Energy_Efficiency_ARM = 5.835 * Energy_Efficiency_Xeon , ενδεικτικά.
 *l2_assoc8 : energy is 237.660157 mJ
 
 *speclibm_DE : energy is 210.371373 mJ
+</pre>
 
 Παρατηρώ ότι ισχύει :
+<pre>
 *energy = (runtime_dynamic+total_leakage) * simulation_time
-
+</pre>
 Παρατηρώ επίσης ότι η επιλογή που έκανα στο Design Exploration του προηγούμενου εργαστηρίου καταφέρνει να
 θέλει λιγότερο energy από κάθε απλή αλλαγή κάποιας παραμέτρου.
 
@@ -234,49 +242,49 @@ Energy_Efficiency_ARM = 5.835 * Energy_Efficiency_Xeon , ενδεικτικά.
 Μορφοποιήσαμε καταλλήλως τα scripts συμφωνα με τις οδηγίες και τρέξαμε simulations για το benchmark bzip.
 Βλέπουμε παρακάτω τα σχετικά διαγράμματα που προκύπτουν.
 
-####cache_line_size
+#### cache_line_size
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/cache.png?raw=true)
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/cache_data.png?raw=true)
 
-####l1_dcache_size
+#### l1_dcache_size
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1dcache.png?raw=true)
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1dcache_data.png?raw=true)
 
-####l1_dcache_assoc
+#### l1_dcache_assoc
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1dcache_assoc.png?raw=true)
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1dcache_assoc_data.png?raw=true)
 
-####l1_icache_size
+#### l1_icache_size
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1icache.png?raw=true)
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1icache_data.png?raw=true)
 
-####l1_icache_assoc
+#### l1_icache_assoc
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1icache_assoc.png?raw=true)
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l1icache_assoc_data.png?raw=true)
 
-####l2_cache_size
+#### l2_cache_size
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l2cache.png?raw=true)
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l2cache_data.png?raw=true)
 
-####l2_cache_assoc
+#### l2_cache_assoc
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l2cache_assoc.png?raw=true)
 
 ![image](https://github.com/iliadisd/gem5_Lab/blob/main/Lab3/photos/l2cache_assoc_data.png?raw=true)
 
-###Διαφορετικά αποτελέσματα και αποκλίσεις
+### Διαφορετικά αποτελέσματα και αποκλίσεις
 Διαβάζοντας το το άρθρο που αναφέρεται και στα resources, καταλήγω στο συμπέρασμα ότι τα σφάλματα και οι αποκλίσεις
 στα αποτελέσματα που πήρα προκύπτουν από 2 παράγοντες. Πρώτον ο συνδυασμός των αποτελεσμάτων από το McPAT και
 το gem5 από το κάθε πρόγραμμα ξεχωριστό το οποίο εισάγει με τους διάφορους υπολογισμούς που κάνει, αλλά και
@@ -300,4 +308,4 @@ https://research.cs.wisc.edu/vertical/papers/2014/wddd-sim-harmful.pdf
 διαφορετικά performance simulator ή και από άλλα προγράμματα όπως το McPAT. Ίσως ο συνδυασμός σε πλατφόρμες
 ενιαίες οι οποίες θα μπορούν να βγάζουν όλα τα απαραίτητα αποτελέσματα συνδυαστικά να είναι μονόδρομος, για την
 καλύτερη μελέτη και άντληση συμπερασμάτων της αρχιτεκτονικής υπολογιστών και της αποτελεσματικότητάς της, σε όλα
- τα επίπεδα (energy, performance, κόστος,..).
+τα επίπεδα (energy, performance, κόστος,..).
