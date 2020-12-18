@@ -292,7 +292,7 @@ Energy_Efficiency_ARM = 5.835 * Energy_Efficiency_Xeon , ενδεικτικά.
 που κάνει τα simulation ή τους υπολογισμούς του. Τέλος, ένας άλλος λόγος είναι ο συνδυασμός διάφορων αποτελεσμάτων
 και η πράξη μεταξύ διάφορων αριθμών που μπορεί να στρογγυλοποιούνται με λάθος τρόπο.
 
-Resources:
+*Resources:*
 https://en.wikipedia.org/wiki/CPU_power_dissipation
 https://en.wikipedia.org/wiki/Dynamic_frequency_scaling
 https://www.princeton.edu/~mrm/tutorial/hpca2001_tutorial.pdf
