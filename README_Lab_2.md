@@ -70,7 +70,7 @@ simulation να τα πειράξω θα είναι το associativity των ca
 * cache_line_size
 </pre>
 
-##bzip
+#### bzip
 Στο default simulation του benchmark, το CPI είναι ήδη κοντά στο 1. Aπό το stats.txt,
 κάτι που θα μπορούσε να βοηθήσει στην επιπλέον μείωση του CPI είναι η αύξηση του
 L1.dcache.assoc (8)και η αύξηση του L1_dcache_size (128kB).
@@ -79,7 +79,7 @@ L1.dcache.assoc (8)και η αύξηση του L1_dcache_size (128kB).
 *bzip_default system.cpu.cpi = 1.673085
 </pre>
 
-##hmmer
+#### hmmer
 Και εδώ το CPI είναι κοντά στο 1. Από το stats.txt βλέπουμε ότι μπορούμε να βελτιώσουμε τα missrates, αυξάνοντας
 το cache_line_size (128), το L1_dcache_size (128kB).
 
@@ -87,7 +87,7 @@ L1.dcache.assoc (8)και η αύξηση του L1_dcache_size (128kB).
 *hmmer system.cpu.cpi = 1.404100
 </pre>
 
-##libm
+#### libm
 Εδώ το L2 missrate είναι πολύ μεγάλο, θα αυξήσω τα L2_cache_size(2048),
 L2.cache.assoc(8) και το cache_line_size (128).
 
@@ -95,7 +95,7 @@ L2.cache.assoc(8) και το cache_line_size (128).
 *libm system.cpu.cpi = 3.495270  
 </pre>
 
-##mcf
+#### mcf
 Έχω μεγάλο l1_icache missrate, οπότε επιλέγω να αυξήσω τα L1_icache_size(128) και L1_dcache_size(64),
 καθώς και τα assoc(8) τους.
 
@@ -103,7 +103,7 @@ L2.cache.assoc(8) και το cache_line_size (128).
 *mcf system.cpu.cpi = 1.251067
 </pre>
 
-##sjeng
+#### sjeng
 Ομοίως με παραπάνω, θα αυξήσω τα L2_cache_size(2048), L2.cache.assoc(8) και το cache_line_size (128).
 
 <pre>
