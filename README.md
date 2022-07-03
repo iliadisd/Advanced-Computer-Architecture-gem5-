@@ -1,5 +1,3 @@
-# Αρχιτεκτονική Προηγμένων Υπολογιστών
-### Εργαστήριο Β Ομάδα 1
-#### Ηλιάδης-Αποστολίδης Δημοσθένης 8811
+# Advanced Computer Architecture (gem5-Lab)
 
-Για κάθε εργαστήριο δείτε τα αντίστοιχα markdown αρχεία.
+In this course, apart from the theory revolving the Computer Architecture, projects were completed which were based on analyzing the Performance of several Computer Systems. To do this, gem5 tool while benchmarking with several pre-existing algorithms.
